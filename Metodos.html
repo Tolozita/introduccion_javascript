@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Concat()
+
+//Concat method does not change the main array; instead, it combines multiple arrays and returns a new array.
+
+//Example:
+
+// const array1 = ['a', 'b', 'c'];
+// const array2 = ['d', 'e', 'f'];
+// const array3 = array 1.concat(array2);
+
+// console.log(array3);
+// expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+// every()
+
+// //every method checks if all the elements of the array fulfil the condition,which is provided by a method passed to it as an argument.It returns a Boolean value(true/false)
+
+// //Example:
+
+// const isBelowThreshold = (currentValue) => currentValue < 40;
+
+// const array1 = [1, 30, 39, 29, 10, 13];
+
+// console.log(array1.every(isBelowThreshold));
+// // expected output: true
+
+// filter()
+
+// The filter method returns a new array that fulfills a condition given by a function.It doesn’t change the original array.
+
+// Example:
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const result = words.filter(word => word.length > 6);
+
+// console.log(result);
+// // expected output: Array ["exuberant", "destruction", "present"]
+
+// find()
+
+// The find method returns the value of the first element in the array that fulfills the condition given by a function. If no values satisfy the condition of a function then undefined will be returned.
+
+// Example:
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const found = array1.find(element => element > 10);
+
+// console.log(found);
+// // expected output: 12
+
+// findIndex()
+
+// findIndex() method is very much similar to find(). The difference is that it returns the index(position) of the first element that satisfies the condition.If it didn’t match any condition then it will return -1.
+
+// Example:
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const isLargeNumber = (element) => element > 13;
+
+// console.log(array1.findIndex(isLargeNumber));
+// // expected output: 3 (130)
+
+// forEach()
+
+// The forEach() method calls the provided function once for each array element.
+
+// Example:
+
+// const array1 = ['ami', 'bami', 'cami'];
+
+// array1.forEach(element => console.log(element));
+
+// // expected output: "'ami"
+// // expected output: "bami"
+// // expected output: "cami"
+
+// indexOf()
+
+// The indexOf() method returns the first index (position) in the array where a given element can be found .
+// If it doesn't find any value then it will return -1.Another important thing is that indexOf searches(left to right) from the first.
+
+// Example:
+
+// const beasts = ['mala', 'gala', 'tala', ‘rala', 'bala'];
+
+// console.log(beasts.indexOf('gala'));
+// // expected output: 1
+
+// lastIndexOf()
+
+// The lastIndexOf() method returns the last index (position) in the array where a given element can be found .If it doesn't find any value then it will return -1.Another important thing is that lastIndexOf searches(right to left.) from the last.
+
+// Example:
+
+// const beasts = ['mala', 'gala', 'tala', ‘rala', 'bala'];
+
+// console.log(beasts.lastIndexOf('bala'));
+// // expected output: 4
+
+// join()
+
+// The join method concatenates all of the elements in an array and then returns a new string separated by commas or a specified separator string.If there is only one element in an array then it will be returned without using the separator.
+
+// Example:
+
+// const elements = ['Fire', 'Air', 'Water'];
+
+// console.log(elements.join());
+// // expected output: "Fire,Air,Water"
+
+// map()
+
+// map() method returns a new array by calling a function for every array element.
+
+// Example:
+
+// const array1 = [1, 4, 9, 16];
+
+// // pass a function to map
+// const map1 = array1.map(x => x * 2);
+
+// console.log(map1);
+// // expected output: Array [2, 8, 18, 32]
+
+// shift()
+
+// shift() method removes an element from the beginning of an array.
+
+// Example:
+
+// const array1 = [1, 2, 3];
+
+// const firstElement = array1.shift();
+
+// console.log(array1);
+// // expected output: Array [2, 3]
+
+// Pop()
+
+// pop() method removes an element from the end of an array.
+
+// Example:
+// const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+// console.log(plants.pop());
+// // expected output: "tomato"
+
+// Unshift()
+
+// The unshift() method add element to the beginning of an array.
+
+// const array1 = [1, 2, 3];
+
+// console.log(array1.unshift(4, 5));
+// // expected output: 5
+
+// console.log(array1);
+// // expected output: Array [4, 5, 1, 2, 3]
+
+// push()
+
+// push() method add element to the end of an array.
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// const count = animals.push('cows');
+// console.log(count);
+// // expected output: 4
+// console.log(animals);
+// // expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+    </script>
+</body>
+</html>
